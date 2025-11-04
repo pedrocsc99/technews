@@ -39,14 +39,14 @@ h1,h2,h3{
   font: inherit;
 }
 
-.grid{
-  display: grid;
-}
-.grid-col{
-  grid-auto-flow: column;
+img{
+  max-width: 100%;
 }
 .container{
   max-width: 1280px;
   padding-inline:32px ;
   margin-inline:auto ;
+}
+main{
+  margin-top: 40px;
 }
