@@ -1,3 +1,23 @@
+section header{
+  border-top:1px solid var(--stroke-color);
+  padding-block:12px 24px ;
+  a{
+    justify-self: end;
+    align-items: center;
+    gap: 8px;
+
+    &:hover span{
+     background-image: url(../assets/icons/ArrowHover.svg);
+    }
+    span{
+      background-image: url(../assets/icons/Arrow.svg);
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      
+    }
+  }
+}
 #featured{
   img{
   height: 100%;
@@ -32,6 +52,28 @@
     }
     h2{
       margin-top:8px;
+    }
+  }
+}
+
+#weakly{
+   
+  img{
+    height: 160px;
+  };
+  &>div{
+    grid-template-columns: repeat(4,292px);
+  }
+  figure{
+    position: relative;
+    .content-tag{
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+    p{
+      padding-top: 8px;
+      font-weight: 800;
     }
   }
 }
